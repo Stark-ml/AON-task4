@@ -1,0 +1,107 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    font-family: 'IBM Plex Sans' ,sans-serif;
+}
+.head-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 45px;
+}
+.p-top150{
+    padding-top:150px ;
+}
+.p-bottom150{
+    padding-bottom: 150px;
+}
+.p-bottom50{
+    padding-bottom: 50px;
+}
+.logo{
+    color: rgba(20, 32, 62, 0.24);
+    width: 270px;
+}
+.login{
+    width:111px;
+    height:49px;
+    background-color:rgba(246, 240, 232, 1);
+    border-radius: 10px;
+    border:none;
+}
+.sign-in{
+    background-color: rgba(20, 32, 62, 1);
+    width: 179px;
+    height: 49px;
+    border-radius: 10px;
+    color:white;
+    border:none;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+}
+a :hover{
+color: rgb(62, 20, 21);
+}
+
+.main-container{
+display: flex;
+justify-content: center;
+align-items:center ;
+flex-direction: column;
+gap: 30px;
+text-align: center;
+}
+.main-container h1{
+    font-size: 66px;
+}
+.main-container p{
+    font-size: 22px;
+}
+.bg-color{
+    background-color: rgba(255, 252, 248, 1);
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0 170px;
+    grid-gap: 30px;
+}
+img{
+    width: 100%;
+}
+
+.line {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;          
+  height: 1px;
+  background-color: rgba(20, 32, 62, 0.2);
+  transform: translate(-50%, -50%);
+}
+
+.line span {
+  position: relative;
+  padding: 6px 20px;
+  background-color: white;
+  color: rgba(20, 32, 62, 1);
+}
