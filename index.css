@@ -1,11 +1,13 @@
 *{
     padding:0;
-    margin:10;
+    margin:0;
     box-sizing: border-box;
 
 }
 .container{
     max-width: 1500px;
+    padding: 0 20px;
+    margin: 0 auto;
     font-family: 'IBM Plex Sans' ,sans-serif;
 }
 .head-container{
@@ -15,13 +17,16 @@
     padding: 15px 45px;
 }
 .p-top150{
-    padding-top:150px ;
+    padding-top: clamp(60px, 10vw, 150px);
 }
 .p-bottom150{
-    padding-bottom: 150px;
+    padding-bottom: clamp(60px, 10vw, 150px);
 }
 .p-bottom50{
-    padding-bottom: 50px;
+    padding-bottom: clamp(50px, 10vw, 60px);
+}
+.p-top10{
+    padding-top: 20px;
 }
 .logo{
     color: rgba(20, 32, 62, 0.24);
@@ -50,6 +55,7 @@ nav{
 }
 a{
     text-decoration: none;
+    color: rgba(20, 32, 62, 1);
 }
 a :hover{
 color: rgb(62, 20, 21);
@@ -74,12 +80,13 @@ text-align: center;
 }
 .card{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding: 0 170px;
-    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0;
+    gap: 30px;
 }
 img{
     width: 100%;
+    height: auto;
 }
 
 .line {
@@ -105,4 +112,16 @@ img{
   padding: 6px 20px;
   background-color: white;
   color: rgba(20, 32, 62, 1);
+}
+
+@media (max-width: 992px) {
+    .head-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
 }
